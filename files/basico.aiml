@@ -12,22 +12,46 @@
 	    </template>
 	</category>
 	<category>
+	    <pattern>HOLA *</pattern>
+	    <template><srai>HOLA</srai></template>
+	</category>
+	<category>
+	    <pattern>* HOLA *</pattern>
+	    <template><srai>HOLA</srai></template>
+	</category>
+	<category>
 	    <pattern>ENTRADAS</pattern>
 	    <template>
 	        <random>
-	            <li>Tenemos papas, ensalada o fruta picada</li>
-	            <li>El dia de hoy hay papas, ensalada o fruta picada</li>
-	            <li>Las entradas del dia de hoy son papas, ensalada o fruta picada</li>
+	            <li>Tenemos papas, ensalada o fruta picada, ¿cuál quieres?</li>
+	            <li>El dia de hoy hay papas, ensalada o fruta picada, ¿cuál quieres?</li>
+	            <li>Las entradas del dia de hoy son papas, ensalada o fruta picada, ¿cuál quieres?</li>
 	        </random>
 	    </template>
 	</category>
 	<category>
 	    <pattern>SOPA</pattern>
-	    <template>¿Quiéres sopa del dia o consomé?</template>
+	    <template>
+	        <random>
+	            <li>¿Quiéres sopa del dia o consomé?</li>
+	            <li>Claro, las sopas que tenemos es la del día y consomé ¿cuál quiéres?</li>
+	        </random>
+	    </template>
 	</category>
-	
+	<category>
+	    <pattern>* SOPA</pattern>
+	    <template><srai>SOPA</srai></template>
+	</category>
+	<category>
+	    <pattern>* SOPA *</pattern>
+	    <template><srai>SOPA</srai></template>
+	</category>
 	<category>
 	    <pattern>* ENTRADAS</pattern>
+	    <template><srai>ENTRADAS</srai></template>
+	</category>
+	<category>
+	    <pattern>* ENTRADAS *</pattern>
 	    <template><srai>ENTRADAS</srai></template>
 	</category>
 	
@@ -35,4 +59,37 @@
 	    <pattern>LA * ESTÁ FRÍA</pattern>
 	    <template>Disculpe, enseguida llevo la <star/> a calentar</template> 
 	</category>
+	<category>
+	    <pattern>SOPA DEL DÍA</pattern>
+	    <template>
+	        <random>
+	            <li>Perfecto, desea algo más?</li>
+	        </random>
+	    </template>
+	</category>
+	<category>
+	    <pattern>* SOPA DEL DÍA</pattern>
+	    <template><srai>SOPA DEL DÍA</srai></template>
+	</category>
+	<category>
+	    <pattern>* SOPA DEL DÍA *</pattern>
+	    <template><srai>SOPA DEL DÍA</srai></template>
+	</category>
+	<category>
+	    <pattern>CONSOMÉ</pattern>
+	    <template>
+	        <random>
+	            <li>Perfecto, desea algo más?</li>
+	        </random>
+	    </template>
+	</category>
+    <category>
+	    <pattern>* CONSOMÉ</pattern>
+	    <template><srai>CONSOMÉ</srai></template>
+	</category>
+	<category>
+	    <pattern>* CONSOMÉ *</pattern>
+	    <template><srai>CONSOMÉ</srai></template>
+	</category>
+	
 </aiml>
