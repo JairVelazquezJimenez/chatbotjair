@@ -5,11 +5,27 @@
 	    <pattern>HOLA</pattern>
 	    <template>
 	        <random>
-	            <li>Bienvenido. ¿Quieres saber cuáles son las entradas o vamos a la sopa?</li>
-	            <li>Hola buen día, ¿Quieres saber cuáles son las entradas o vamos a la sopa?</li>
-	            <li>Hola, ¿Quieres saber cuáles son las entradas o vamos a la sopa?</li>
+	            <li>Bienvenido. <srai>MENU</srai></li>
+	            <li>Hola. <srai>MENU</srai></li>
+	            <li>Buen dia. <srai>MENU</srai></li>
 	        </random>
 	    </template>
+	</category>
+	<category>
+	    <pattern>MENU</pattern>
+	    <template>¿Quieres saber cuáles son las entradas o vamos a la sopa?</template>
+	</category>
+	<category>
+	    <pattern>* MENU</pattern>
+	    <template><srai>MENU</srai></template>
+	</category>
+	<category>
+	    <pattern>MENU *</pattern>
+	    <template><srai>MENU</srai></template>
+	</category>
+	<category>
+	    <pattern>* MENU *</pattern>
+	    <template><srai>MENU</srai></template>
 	</category>
 	<category>
 	    <pattern>* HOLA</pattern>
@@ -27,9 +43,9 @@
 	    <pattern>ENTRADAS</pattern>
 	    <template>
 	        <random>
-	            <li>Tenemos papas, ensalada o fruta picada, ¿cuál quieres?</li>
-	            <li>El dia de hoy hay papas, ensalada o fruta picada, ¿cuál quieres?</li>
-	            <li>Las entradas del dia de hoy son papas, ensalada o fruta picada, ¿cuál quieres?</li>
+	            <li>Tenemos papas o ensalada, ¿cuál quieres?</li>
+	            <li>El dia de hoy hay papas o ensalada, ¿cuál quieres?</li>
+	            <li>Las entradas del dia de hoy son papas o ensalada, ¿cuál quieres?</li>
 	        </random>
 	    </template>
 	</category>
@@ -75,7 +91,7 @@
 	    <pattern>SOPA DEL DÍA</pattern>
 	    <template>
 	        <random>
-	            <li>Perfecto, desea algo más?</li>
+	            <li>Perfecto, ¿desea algo más?</li>
 	        </random>
 	    </template>
 	</category>
@@ -95,7 +111,7 @@
 	    <pattern>CONSOMÉ</pattern>
 	    <template>
 	        <random>
-	            <li>Perfecto, desea algo más?</li>
+	            <li>Perfecto, ¿desea algo más?</li>
 	        </random>
 	    </template>
 	</category>
@@ -110,5 +126,74 @@
 	<category>
 	    <pattern>* CONSOMÉ *</pattern>
 	    <template><srai>CONSOMÉ</srai></template>
+	</category>
+	<category>
+	<pattern>PAPAS</pattern>
+	<template><random>
+	    <li>Perfecto, desea algo más?</li>
+	</random></template>
+	</category>
+	
+	<category>
+	    <pattern>* PAPAS</pattern>
+	    <template><srai>PAPAS</srai></template>
+	</category>
+	<category>
+	    <pattern>PAPAS *</pattern>
+	    <template><srai>PAPAS</srai></template>
+	</category>
+	<category>
+	    <pattern>* PAPAS *</pattern>
+	    <template><srai>PAPAS</srai></template>
+	</category>
+    <category>
+	<pattern>ENSALADA</pattern>
+	<template><random>
+	    <li>Perfecto, desea algo más?</li>
+	</random></template>
+	</category>
+	<category>
+	    <pattern> ENSALADA *</pattern>
+	    <template><srai>ENSALADA</srai></template>
+	</category>
+	<category>
+	    <pattern>* ENSALADA </pattern>
+	    <template><srai>ENSALADA</srai></template>
+	</category>
+	<category>
+	    <pattern>* ENSALADA *</pattern>
+	    <template><srai>ENSALADA</srai></template>
+	</category>
+	<category>
+	    <pattern>SI</pattern>
+	    <template><srai>MENU</srai></template>
+	</category>
+	<category>
+	    <pattern>* SI</pattern>
+	    <template><srai>SI</srai></template>
+	</category>
+	<category>
+	    <pattern> SI *</pattern>
+	    <template><srai>SI</srai></template>
+	</category>
+	<category>
+	    <pattern>* SI *</pattern>
+	    <template><srai>SI</srai></template>
+	</category>
+	<category>
+	    <pattern>NO</pattern>
+	    <template>Perfecto, sería todo</template>
+	</category>
+	<category>
+	    <pattern>* NO</pattern>
+	    <template><srai>NO</srai></template>
+	</category>
+	<category>
+	    <pattern> NO *</pattern>
+	    <template><srai>NO</srai></template>
+	</category>
+	<category>
+	    <pattern>* NO *</pattern>
+	    <template><srai>NO</srai></template>
 	</category>
 </aiml>
