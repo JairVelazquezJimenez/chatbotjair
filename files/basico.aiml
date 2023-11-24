@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>HOLA</pattern>
+	    <template>Bienvenido. ¿Quieres saber cuáles son las entradas o vamos a la sopa?</template>
+	</category>
+	<category>
+	    <pattern>ENTRADAS</pattern>
+	    <template>Tenemos papas, ensalada o fruta picada</template>
+	</category>
+	<category>
+	    <pattern>SOPA</pattern>
+	    <template>¿Quiéres sopa del dia o consomé?</template>
+	</category>
 </aiml>
