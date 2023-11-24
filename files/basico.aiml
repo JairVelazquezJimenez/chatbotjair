@@ -7,7 +7,13 @@
 	</category>
 	<category>
 	    <pattern>ENTRADAS</pattern>
-	    <template>Tenemos papas, ensalada o fruta picada</template>
+	    <template>
+	        <random>
+	            <li>Tenemos papas, ensalada o fruta picada</li>
+	            <li>El dia de hoy hay papas, ensalada o fruta picada</li>
+	            <li>Las entradas del dia de hoy son papas, ensalada o fruta picada</li>
+	        </random>
+	    </template>
 	</category>
 	<category>
 	    <pattern>SOPA</pattern>
