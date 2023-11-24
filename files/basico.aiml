@@ -12,6 +12,10 @@
 	    </template>
 	</category>
 	<category>
+	    <pattern>* HOLA</pattern>
+	    <template><srai>HOLA</srai></template>
+	</category>
+	<category>
 	    <pattern>HOLA *</pattern>
 	    <template><srai>HOLA</srai></template>
 	</category>
@@ -43,11 +47,19 @@
 	    <template><srai>SOPA</srai></template>
 	</category>
 	<category>
+	    <pattern> SOPA *</pattern>
+	    <template><srai>SOPA</srai></template>
+	</category>
+	<category>
 	    <pattern>* SOPA *</pattern>
 	    <template><srai>SOPA</srai></template>
 	</category>
 	<category>
 	    <pattern>* ENTRADAS</pattern>
+	    <template><srai>ENTRADAS</srai></template>
+	</category>
+	<category>
+	    <pattern>ENTRADAS *</pattern>
 	    <template><srai>ENTRADAS</srai></template>
 	</category>
 	<category>
@@ -72,6 +84,10 @@
 	    <template><srai>SOPA DEL DÍA</srai></template>
 	</category>
 	<category>
+	    <pattern>SOPA DEL DÍA *</pattern>
+	    <template><srai>SOPA DEL DÍA</srai></template>
+	</category>
+	<category>
 	    <pattern>* SOPA DEL DÍA *</pattern>
 	    <template><srai>SOPA DEL DÍA</srai></template>
 	</category>
@@ -88,8 +104,11 @@
 	    <template><srai>CONSOMÉ</srai></template>
 	</category>
 	<category>
+	    <pattern> CONSOMÉ *</pattern>
+	    <template><srai>CONSOMÉ</srai></template>
+	</category>
+	<category>
 	    <pattern>* CONSOMÉ *</pattern>
 	    <template><srai>CONSOMÉ</srai></template>
 	</category>
-	
 </aiml>
