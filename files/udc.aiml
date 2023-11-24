@@ -4,4 +4,8 @@
     <pattern>*</pattern>
     <template>No tengo respuesta para eso</template>
   </category>
+  <category>
+      <pattern>HOLA</pattern>
+      <template>Hola, soy el chatbot de Jair</template>
+  </category>
 </aiml>
